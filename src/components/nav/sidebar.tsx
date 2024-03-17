@@ -136,7 +136,7 @@ const Sidebar = () => {
                                     </p>
                                 </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink
                                     to="/dashboard/revenue"
                                     style={({ isActive }) => {
@@ -218,7 +218,7 @@ const Sidebar = () => {
                                     />
                                     Site Traffic
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </div>
                     </ul>
                 </div>
