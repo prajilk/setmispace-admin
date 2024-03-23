@@ -18,7 +18,7 @@ import {
     Button,
     Spinner,
 } from "@nextui-org/react";
-import { ChevronDown, Eye, Pencil, Plus, Trash2 } from "lucide-react";
+import { ChevronDown, Eye, Pencil, Plus } from "lucide-react";
 import {
     Tooltip,
     TooltipContent,
