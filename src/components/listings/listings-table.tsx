@@ -29,6 +29,7 @@ import { Input } from "../ui/input";
 import { Link } from "react-router-dom";
 import { useListings } from "../../api-hooks/get-listings";
 import { Business } from "../../lib/types";
+import DeleteListing from "../dialog/delete-listing";
 
 const statusColorMap: Record<string, ChipProps["color"]> = {
     paid: "success",
@@ -185,18 +186,9 @@ export default function App() {
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger>
-                                        <span className="text-lg text-danger cursor-pointer active:opacity-50">
-                                            <Trash2 size={20} />
-                                        </span>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Delete user</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
+
+                            {/* Delete Listing */}
+                            <DeleteListing id={business._id} />
                         </div>
                     );
                 default:
